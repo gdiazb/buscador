@@ -2,7 +2,7 @@ const autos = [
 	{
 		marca: 'BMW',
 		modelo: 'Serie 3',
-		year: 2020,
+		year: 2022,
 		precio: 30000,
 		puertas: 4,
 		color: 'Blanco',
@@ -11,7 +11,7 @@ const autos = [
 	{ 
         marca: 'Audi', 
         modelo: 'A4', 
-        year: 2020, 
+        year: 2022, 
         precio: 40000, 
         puertas: 4, 
         color: 'Negro', 
@@ -29,7 +29,7 @@ const autos = [
 	{ 
         marca: 'Audi', 
         modelo: 'A6', 
-        year: 2020, 
+        year: 2022, 
         precio: 35000, 
         puertas: 4, 
         color: 'Negro', 
@@ -74,7 +74,7 @@ const autos = [
 	{
 		marca: 'Dodge',
 		modelo: 'Challenger',
-		year: 2020,
+		year: 2022,
 		precio: 40000,
 		puertas: 4,
 		color: 'Blanco',
@@ -93,7 +93,7 @@ const autos = [
 	{
 		marca: 'Dodge',
 		modelo: 'Challenger',
-		year: 2020,
+		year: 2022,
 		precio: 25000,
 		puertas: 2,
 		color: 'Rojo',
