@@ -2,11 +2,11 @@ body {
     font-family: 'Roboto';
 }
 html {
-    font-size: 62.5%;
+    font-size: 16px;
 }
 h1 {
     font-family: 'Roboto';
-    font-size: 4rem;
+    font-size: 2rem;
     padding: 3rem 0;
     margin: 0;
 }
@@ -74,6 +74,7 @@ form {
     text-align: center;
     grid-gap: 20px;
     padding: 1rem;
+    position: relative
 }
 
 .card__auto {
@@ -86,7 +87,7 @@ form {
     "header header"
     "item1 item2"
     "item3 item4";
-    background: rgb(193, 165, 249);
+    background: #c1a5f9;
 }
 
 .card__auto h3 {
@@ -103,4 +104,12 @@ form {
     font-size: 16px;
     margin: 0;
     padding: 0;
+}
+
+.results__not-found {
+    padding: 1rem;
+    background-color: #c1a5f9;
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
 }

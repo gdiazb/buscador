@@ -102,8 +102,19 @@ function yearGenerator() {
 }
 
 function filtrarAuto() {
-    const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor)
-    mostrarAutos(resultado)
+    const resultado =
+        autos.filter(filtrarMarca)
+            .filter(filtrarYear)
+            .filter(filtrarMinimo)
+            .filter(filtrarMaximo)
+            .filter(filtrarPuertas)
+            .filter(filtrarTransmision)
+            .filter(filtrarColor)
+    if(resultado.length) {
+        mostrarAutos(resultado)
+    } else {
+        mostrarNoResults()
+    }
 }
 
 function filtrarMarca(auto) {
@@ -161,3 +172,14 @@ function filtrarColor(auto) {
     }
     return auto
 }
+
+function mostrarNoResults() {
+    
+    limpiarHTML()
+
+    const noResultsText = document.createElement('p')
+    noResultsText.classList.add('results__not-found')
+    noResultsText.textContent = 'No hay autos con estas características'
+    
+    resultado.appendChild(noResultsText)
+} 
